@@ -5,10 +5,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copy the compiled Spring Boot JAR file from your local machine to the container
-COPY target/my-app.jar /app/my-app.jar
+COPY target/ms-java-hello.jar /app/ms-java-hello.jar
 
 # Expose the port on which the app will run
 EXPOSE 8080
 
 # Command to run the Spring Boot application
-ENTRYPOINT ["java", "-jar", "my-java-hello.jar"]
+ENTRYPOINT ["java", "-jar", "ms-java-hello.jar"]
